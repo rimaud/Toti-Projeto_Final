@@ -866,13 +866,37 @@ footer {
         font-size: 16px;
     }
 
+    .container {
+        padding: 0 20px;
+    }
+
+    /* Header */
+    #nav ul {
+        padding: 15px 20px;
+    }
+
+    #nav li {
+        margin: 0 10px;
+    }
+
+    #nav a {
+        font-size: 16px;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 40px 20px;
+    }
+
     .hero-content {
         flex-direction: column;
         text-align: center;
+        padding: 40px 30px;
+        gap: 40px;
     }
 
     .hero-image {
-        flex: 0 0 200px;
+        flex: 0 0 auto;
     }
 
     .hero-image img {
@@ -888,7 +912,7 @@ footer {
         font-size: 22px;
     }
 
-    .hero-text p {
+    .hero-text p, .hero-text p1, .hero-text p2 {
         font-size: 16px;
     }
 
@@ -899,20 +923,238 @@ footer {
     .social-links a {
         width: 50px;
         height: 50px;
-        font-size: 24px;
+        font-size: 22px;
+    }
+
+    /* Sobre Mim */
+    .sobre-mim {
+        padding: 40px 20px;
+    }
+
+    .sobre-mim h2 {
+        font-size: 36px;
+    }
+
+    .sobre-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .sobre-card {
+        padding: 35px 25px;
+    }
+
+    /* Skills */
+    .skills {
+        padding: 40px 20px;
+    }
+
+    .skills .container {
+        padding: 40px 25px;
+    }
+
+    .skills h2 {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+
+    .skill-card {
+        min-width: 160px;
+        padding: 35px 25px;
+    }
+
+    .skill-card i {
+        font-size: 50px;
+    }
+
+    .skill-card h3 {
+        font-size: 16px;
+    }
+
+    /* Diferenciais */
+    .diferenciais {
+        padding: 40px 20px;
+    }
+
+    .diferenciais-card {
+        padding: 40px 25px;
+    }
+
+    .diferenciais h2 {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+
+    .diferencial-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .diferencial-item i {
+        font-size: 40px;
+    }
+
+    .diferencial-content h3 {
+        font-size: 20px;
+    }
+
+    /* Projetos */
+    .projetos {
+        padding: 40px 20px;
+    }
+
+    .projetos-card {
+        padding: 40px 25px;
     }
 
     .projetos h2,
-    .contato h2 {
+    .projetos-card h2 {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+
+    .projeto-card {
+        padding: 30px 25px;
+    }
+
+    .projeto-card h3 {
+        font-size: 26px;
+    }
+
+    .projeto-tech {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .projeto-tech i {
         font-size: 32px;
     }
 
+    .projeto-card p {
+        font-size: 16px;
+    }
+
+    .projeto-link {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+
+    /* Contato */
+    .contato {
+        padding: 40px 20px;
+    }
+
+    .contato h2 {
+        font-size: 36px;
+    }
+
+    .contato-intro {
+        font-size: 18px;
+    }
+
+    .contact-form {
+        padding: 40px 30px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+
+    .submit-btn {
+        padding: 18px;
+        font-size: 18px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 30px 20px;
+        font-size: 16px;
+    }
+}
+
+/* Mobile Extra Small */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    #nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+    }
+
     #nav li {
-        margin: 0 15px;
+        margin: 5px 8px;
     }
 
     #nav a {
+        font-size: 14px;
+    }
+
+    .hero-content {
+        padding: 30px 20px;
+    }
+
+    .hero-image img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .hero-text h1 {
+        font-size: 26px;
+    }
+
+    .hero-text h2 {
         font-size: 18px;
+    }
+
+    .hero-text p, .hero-text p1, .hero-text p2 {
+        font-size: 14px;
+    }
+
+    .social-links a {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    .sobre-mim h2,
+    .skills h2,
+    .diferenciais h2,
+    .projetos h2,
+    .contato h2 {
+        font-size: 28px;
+    }
+
+    .skills .container,
+    .diferenciais-card,
+    .projetos-card {
+        padding: 30px 20px;
+    }
+
+    .skill-card {
+        min-width: 140px;
+        padding: 30px 20px;
+    }
+
+    .skill-card i {
+        font-size: 44px;
+    }
+
+    .projeto-card h3 {
+        font-size: 22px;
+    }
+
+    .projeto-tech i {
+        font-size: 28px;
+    }
+
+    .contact-form {
+        padding: 30px 20px;
     }
 }
 
